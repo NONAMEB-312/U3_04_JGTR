@@ -9,5 +9,5 @@ public interface CedeRepository {
     Cede save (Cede save);
     List<Cede> findAll();
     Optional<Cede> findById(Long id);
-    void deletedBy(Long id);
+    void deletedById(Long id);
 }

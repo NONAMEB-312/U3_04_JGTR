@@ -36,7 +36,7 @@ public class CedeRepositoryImpl implements CedeRepository {
     }
 
     @Override
-    public void deletedBy(Long id) {
+    public void deletedById(Long id) {
         cedes.removeIf(c -> c.getId().equals(id));
     }
 
