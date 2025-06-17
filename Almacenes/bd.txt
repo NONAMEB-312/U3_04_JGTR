@@ -1,0 +1,34 @@
+create database almacenes;
+
+use almacenes;
+
+select * from cliente;
+select * from cede;
+select * from almacen;
+
+CREATE TABLE cede (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    clave VARCHAR(50) UNIQUE NOT NULL,
+    estado VARCHAR(50) NOT NULL,
+    municipio VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE cliente (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nombre_completo VARCHAR(100) NOT NULL,
+    telefono VARCHAR(20) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL
+);
+
+CREATE TABLE almacen (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    clave VARCHAR(50) UNIQUE NOT NULL,
+    fecha_registro DATE,
+    precio_venta DECIMAL(10, 2) NOT NULL,
+    precio_renta DECIMAL(10, 2) NOT NULL,
+    tamanio ENUM('G', 'M', 'P') NOT NULL,
+    cede_id BIGINT NOT NULL,
+    cliente_id BIGINT,
+    FOREIGN KEY (cede_id) REFERENCES cede(id),
+    FOREIGN KEY (cliente_id) REFERENCES cliente(id)
+);
