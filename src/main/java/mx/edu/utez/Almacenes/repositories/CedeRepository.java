@@ -1,6 +1,6 @@
-package com.example.Cedes.repositories;
+package mx.edu.utez.Almacenes.repositories;
 
-import com.example.Cedes.models.Cede;
+import mx.edu.utez.Almacenes.models.Cede;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CedeRepository extends JpaRepository<Cede, Integer> {

@@ -1,4 +1,4 @@
-package com.example.Cedes;
+package mx.edu.utez.Almacenes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

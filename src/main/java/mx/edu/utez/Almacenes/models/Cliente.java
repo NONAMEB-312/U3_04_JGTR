@@ -1,4 +1,4 @@
-package com.example.Cedes.models;
+package mx.edu.utez.Almacenes.models;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,6 @@
-package com.example.Cedes.services;
-import com.example.Cedes.models.Cliente;
-import com.example.Cedes.repositories.ClienteRepository;
+package mx.edu.utez.Almacenes.services;
+import mx.edu.utez.Almacenes.models.Cliente;
+import mx.edu.utez.Almacenes.repositories.ClienteRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 

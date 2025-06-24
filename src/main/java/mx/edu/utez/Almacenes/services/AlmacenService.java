@@ -1,9 +1,9 @@
-package com.example.Cedes.services;
+package mx.edu.utez.Almacenes.services;
 
-import com.example.Cedes.models.Almacen;
-import com.example.Cedes.models.Cede;
-import com.example.Cedes.models.Cliente;
-import com.example.Cedes.repositories.AlmacenRepository;
+import mx.edu.utez.Almacenes.models.Almacen;
+import mx.edu.utez.Almacenes.models.Cede;
+import mx.edu.utez.Almacenes.models.Cliente;
+import mx.edu.utez.Almacenes.repositories.AlmacenRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

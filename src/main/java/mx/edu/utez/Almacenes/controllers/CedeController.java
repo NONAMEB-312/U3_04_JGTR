@@ -1,7 +1,7 @@
-package com.example.Cedes.controllers;
+package mx.edu.utez.Almacenes.controllers;
 
-import com.example.Cedes.models.Cede;
-import com.example.Cedes.services.CedeService;
+import mx.edu.utez.Almacenes.models.Cede;
+import mx.edu.utez.Almacenes.services.CedeService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.Cedes.config;
+package mx.edu.utez.Almacenes.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -32,8 +32,8 @@ public class SecurityConfig {
     @Bean
     public UserDetailsService userDetailsService() {
         UserDetails user = User.withDefaultPasswordEncoder()
-                .username("admin")
-                .password("password")
+                .username("root")
+                .password("root")
                 .roles("ADMIN")
                 .build();
 
